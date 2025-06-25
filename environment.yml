@@ -1,9 +1,30 @@
-name: myenv
+name: ijan-env
 channels:
+  - conda-forge
   - defaults
 dependencies:
-  - python=3.8
+  - python=3.9  # Вы можете выбрать другую версию Python, если необходимо
   - pip
-  - flask  # Или любые другие зависимости вашего проекта
+  - fastapi
+  - uvicorn
+  - sqlalchemy  # Если используется база данных SQL
+  - pydantic
+  - requests
+  - aiohttp
+  - beautifulsoup4
+  - Flask  # Если используется
+  - gTTS  # Если используется
+  - pydub  # Если используется
+  - pyttsx3  # Если используется
+  - pillow
+  - lxml
+  - openai
+  - python-dotenv
   - pip:
-    - -r requirements.txt
+      - deep-translator
+      - pyairtable
+      - pytelegrambotapi
+      - pywhatkit
+      - googletrans
+      - twilio
+      # Добавьте дополнительные пакеты, если нужно
