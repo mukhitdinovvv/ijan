@@ -1,0 +1,9 @@
+name: myenv
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - pip
+  - flask  # Или любые другие зависимости вашего проекта
+  - pip:
+    - -r requirements.txt
