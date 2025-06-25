@@ -3,28 +3,27 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.9  # Вы можете выбрать другую версию Python, если необходимо
+  - python=3.9  # Или нужная версия Python
   - pip
   - fastapi
   - uvicorn
-  - sqlalchemy  # Если используется база данных SQL
+  - sqlalchemy
   - pydantic
   - requests
   - aiohttp
   - beautifulsoup4
-  - Flask  # Если используется
-  - gTTS  # Если используется
-  - pydub  # Если используется
-  - pyttsx3  # Если используется
+  - Flask
+  - gTTS
+  - pydub
   - pillow
   - lxml
   - openai
   - python-dotenv
   - pip:
+      - pyttsx3  # Установка через pip
       - deep-translator
       - pyairtable
       - pytelegrambotapi
       - pywhatkit
       - googletrans
       - twilio
-      # Добавьте дополнительные пакеты, если нужно
